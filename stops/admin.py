@@ -1,3 +1,6 @@
+from django.contrib import admin
+
+# Models
 from django.contrib.gis.admin import OSMGeoAdmin
 from .models import Stop
 
