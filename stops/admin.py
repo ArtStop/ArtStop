@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-# Models
+# Register your models here.
+
 from django.contrib.gis.admin import OSMGeoAdmin
 from .models import Stop
 
