@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'stops',
     'users',
+    'leaflet',
 ]
 
 MIDDLEWARE = [
