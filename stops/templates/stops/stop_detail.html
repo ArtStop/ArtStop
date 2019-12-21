@@ -16,12 +16,10 @@
         // zoom to point & add it to map
         map.setView([lat, lon], 12);
         L.marker([lat, lon]).addTo(map);
-        L.marker([navigator.geolocation.getCurrentPosition(showPosition).lat,navigator.geolocation.getCurrentPosition(showPosition).lon]).addTo(map);
-    }
-    function showPosition(position){
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-        return lat, lon;
+        navigator.geolocation.getCurrentPosition(showPosition);
+        function showPosition(position){
+            L.marker([position.coords.latitude,position.coords.longitude]).addTo(map);
+        }
     }
 </script>
   <article class="media content-section">
