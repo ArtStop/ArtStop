@@ -20,3 +20,6 @@ class Home(generic.ListView):
     user_location)
     ).order_by('distance')[0:10]
     template_name = 'stops/index.html'
+
+class StopDetailView(generic.DetailView):
+    model = Stop
