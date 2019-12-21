@@ -18,5 +18,5 @@ class Home(generic.ListView):
     context_object_name = 'stops'
     queryset = Stop.objects.annotate(distance=Distance('location',
     user_location)
-    ).order_by('distance')[0:6]
+    ).order_by('distance')[0:10]
     template_name = 'stops/index.html'
