@@ -1,6 +1,8 @@
 {% extends "stops/base.html" %}
 {% block content %}
 {% load leaflet_tags %}
+{% load static %}
+{% load ratings %}
 {% leaflet_css %}
 {% leaflet_js %}
 <div>
@@ -22,6 +24,9 @@
         }
     }
 </script>
+{% block rating_detail %}
+<p>{% ratings object %}</p>
+{% endblock rating_detail %}
   <article class="media content-section">
     <!-- <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }}"> -->
     <div class="media-body">
