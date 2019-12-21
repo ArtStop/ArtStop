@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'stops',
     'users',
     'leaflet',
+    'star_ratings',
 ]
 
 MIDDLEWARE = [
