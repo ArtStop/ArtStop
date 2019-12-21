@@ -20,7 +20,7 @@
         L.marker([lat, lon]).addTo(map);
         navigator.geolocation.getCurrentPosition(showPosition);
         function showPosition(position){
-            L.marker([position.coords.latitude,position.coords.longitude]).addTo(map);
+            L.circleMarker([position.coords.latitude,position.coords.longitude]).addTo(map).bindPopup("This is you.");
         }
     }
 </script>
