@@ -7,7 +7,7 @@
     <table class="table">
     {% for stop in stops %}
         <tr>
-        <th>{{ stop.name }}</th>
+        <td> <a href="{% url 'stop-detail' pk=stop.id %}" >{{ stop.name }} </a> </td>
         <td>{{stop.distance}}</td>
     {% endfor %}
     </table>
