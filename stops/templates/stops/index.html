@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Nearby ArtStops</title>
-        <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
-    </head>
-<body>
+{% extends "stops/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
     <h1 class="title">Nearby ArtStops</h1>
     <p class="subtitle"><i>ArtStop is an app that shows the 10 nearest ArtStops to you according to your location!</i></p>
     {% if stops %}
@@ -18,5 +12,4 @@
     {% endfor %}
     </table>
     {% endif %}
-</body>
-</html>
+{% endblock content%}
