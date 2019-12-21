@@ -1,5 +1,26 @@
 {% extends "stops/base.html" %}
 {% block content %}
+<div>
+    <h1>{{ object.name }}</h1>
+    {% leaflet_map "main" callback="map_init" %}
+</div>
+
+<script type="text/javascript">
+    function map_init(map, options) {
+        // get point lat and lon
+        var lon = "{{ object.location.x }}";
+        var lat = "{{ object.location.y }}";
+        // zoom to point & add it to map
+        map.setView([lat, lon], 12);
+        L.marker([lat, lon]).addTo(map);
+        L.marker([navigator.geolocation.getCurrentPosition(showPosition).lat,navigator.geolocation.getCurrentPosition(showPosition).lon]).addTo(map);
+    }
+    function showPosition(position){
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        return lat, lon;
+    }
+</script>
   <article class="media content-section">
     <!-- <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }}"> -->
     <div class="media-body">
