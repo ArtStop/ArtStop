@@ -27,6 +27,8 @@
 {% block rating_detail %}
 <p>{% ratings object %}</p>
 {% endblock rating_detail %}
+<link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
+<script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
   <article class="media content-section">
     <!-- <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }}"> -->
     <div class="media-body">
