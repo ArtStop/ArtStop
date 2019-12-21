@@ -7,4 +7,4 @@ from .models import Stop
 
 @admin.register(Stop)
 class StopAdmin(OSMGeoAdmin):
-    list_display = ('name', 'location')
+    list_display = ('name', 'category', 'location')

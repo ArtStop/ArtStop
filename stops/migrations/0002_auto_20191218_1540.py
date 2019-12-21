@@ -20,10 +20,18 @@ def load_data(apps, schema_editor):
                 if objType == 'node':
                     tags = obj['tags']
                     name = tags.get('name','no-name')
+                    if tags.get('tourism'):
+                         category = tags.get('tourism')
+                    elif tags.get('amenity'):
+                         category = tags.get('amenity')
+                    elif tags.get('building'):
+                         category = tags.get('building')
+                    address = tags.get('addr:full')
+                    city = 'Istanbul'
                     longitude = obj.get('lon', 0)
                     latitude = obj.get('lat', 0)
                     location = fromstr(f'POINT({longitude} {latitude})', srid=4326)
-                    Stop(name=name, location = location).save()
+                    Stop(name=name, category=category, location = location, address=address,city = city).save()
             except KeyError:
                 pass     
 

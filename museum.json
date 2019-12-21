@@ -31,6 +31,58 @@
     },
     {
       "type": "node",
+      "id": 5599994986,
+      "lat": 41.0018646,
+      "lon": 28.9331468,
+      "tags": {
+        "addr:city": "İstanbul",
+        "addr:district": "Fatih",
+        "alt_name": "Sulu Manastırı;Surp Kevork Ermeni Kilisesi",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "armenian_apostolic",
+        "name": "Surp Kevork Kilisesi",
+        "name:ar": "كنيسة سورب كيفورك للأرمن",
+        "name:de": "St.-Georgs-Kirche von Samatya",
+        "name:el": "Μονὴ τῆς Θεοτòκου τῆς Περιβλὲπτου",
+        "name:en": "Church of St. George of Samatya",
+        "name:hy": "Սամաթիոյ Սուրբ Գէորգ Եկեղեցի",
+        "religion": "christian",
+        "source": "bing",
+        "wikidata": "Q5117225",
+        "wikipedia": "tr:Surp Kevork Kilisesi"
+      }
+    },{
+      "type": "way",
+      "id": 112619334,
+      "lat": 41.032501,
+      "lon": 28.976400,
+      "tags": {
+        "addr:city": "İstanbul",
+        "addr:housenumber": "171A",
+        "addr:postcode": "34433",
+        "addr:street": "İstiklal Caddesi",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "catholic",
+        "name": "Sent Antuan Katolik Kilisesi",
+        "name:ar": "كنيسة سانت انتونيو للكاثوليك",
+        "name:de": "Basilika St. Antonius von Padua",
+        "name:en": "Church of Saint Anthony of Padua",
+        "name:es": "Iglesia de San Antonio de Padua",
+        "name:fr": "Église Saint-Antoine de Padoue",
+        "name:it": "Basilica di Sant'Antonio di Padova",
+        "name:ru": "Католическая церковь Св. Антония",
+        "name:tr": "St. Antuan Katolik Kilisesi",
+        "religion": "christian",
+        "source": "Bing",
+        "website": "http://www.katolikkilisesi.org/",
+        "wikidata": "Q810122",
+        "wikipedia": "en:St. Anthony of Padua Church in Istanbul"
+      }
+    },
+    {
+      "type": "node",
       "id": 654205150,
       "lat": 41.0319036,
       "lon": 28.975196,
@@ -62,6 +114,434 @@
       "tags": {
         "name": "İspirtohane",
         "tourism": "museum"
+      }
+    },
+    {
+      "type": "node",
+      "id": 654189927,
+      "lat": 41.032377,
+      "lon": 28.9774536,
+      "tags": {
+        "addr:full": "Tomtom Mah. Yeni Çarşı Cad. Kaymakam Reşat Bey Sk. No:11a 34433 Galatasaray-Beyoğlu / İstanbul",
+        "amenity": "theatre",
+        "name": "Garaj Istanbul",
+        "name:ar": "كراج اسطنبول",
+        "phone": "+90 (0) 212 244 44 99",
+        "url": "http://www.garajistanbul.org"
+      }
+    },
+    {
+      "type": "node",
+      "id": 795683753,
+      "lat": 40.9886069,
+      "lon": 28.8483084,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Yunus Emre Kültür Merkezi",
+        "name:ar": "مركز يونس عمر الثقافي",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 976476780,
+      "lat": 40.9999995,
+      "lon": 28.8616335,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Bahçelievler Evlendirme Dairesi&Kültür Merkezi",
+        "name:ar": "بيت باشيلفلر للثقافة"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1867004656,
+      "lat": 40.9920481,
+      "lon": 28.7834425,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Küçükçekmece Culture Center",
+        "name:tr": "Cennet Kültür Sanat Merkezi",
+        "operator": "Küçükçekmece Culture Center",
+        "website": "http://cennetkultursanat.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2201696929,
+      "lat": 41.1707061,
+      "lon": 29.0537848,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Nejat Uygur Sahnesi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2282062473,
+      "lat": 41.0227671,
+      "lon": 28.5746418,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Kültür Park Anfi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2381740780,
+      "lat": 41.057627,
+      "lon": 28.9159093,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Şehir Tiyatroları Gaziosmanpaşa Sahnesi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2449655754,
+      "lat": 40.9853447,
+      "lon": 29.0275368,
+      "tags": {
+        "alt_name": "Akla Kara Tiyatro",
+        "amenity": "theatre",
+        "name": "Ak'la Kara Tiyatro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2516712699,
+      "lat": 41.0257585,
+      "lon": 29.1049856,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Haldun Alagaş Şehir Tiyatroları Ümraniye Sahnesi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4042485225,
+      "lat": 41.006781,
+      "lon": 28.930597,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Çevre Tiyatrosu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4242001990,
+      "lat": 41.0143044,
+      "lon": 28.975675,
+      "tags": {
+        "amenity": "theatre",
+        "name": "HODJAPASHA"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4317668391,
+      "lat": 40.9906354,
+      "lon": 29.0275925,
+      "tags": {
+        "addr:housenumber": "64",
+        "addr:street": "Söğütlüçeşme Caddesi",
+        "amenity": "theatre",
+        "email": "kadikoytheatron@gmail.com",
+        "name": "Kadıköy Theatron",
+        "phone": "0 (541) 739 47 24",
+        "website": "http://www.kadikoytheatron.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4467639090,
+      "lat": 41.0355451,
+      "lon": 28.882321,
+      "tags": {
+        "addr:street": "Kemal Hatipoğlu Cd.",
+        "amenity": "theatre",
+        "name": "Dr. Kadir Topbaş Kültür Sanat Merkezi",
+        "name:tr": "Dr. Kadir Topbaş Kültür Sanat Merkezi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4588972792,
+      "lat": 40.9895743,
+      "lon": 28.7056446,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Tiyatro Çocuk Atölye",
+        "name:en": "Tiyatro Çocuk Atölye",
+        "name:tr": "Tiyatro Çocuk Atölye",
+        "website": "http://www.tiyatrococuk.com.tr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4588974089,
+      "lat": 40.989053,
+      "lon": 28.7061051,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Tiyatro Çocuk",
+        "name:en": "Tiyatro Çocuk",
+        "name:tr": "Tiyatro Çocuk",
+        "phone": "02124222062",
+        "website": "http://www.tiyatrococuk.com.tr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4735095231,
+      "lat": 40.9870051,
+      "lon": 29.0286426,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Moda Sahnesi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4833359922,
+      "lat": 40.9873301,
+      "lon": 29.0279241,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Baba Sahne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4959676224,
+      "lat": 41.0177991,
+      "lon": 28.5924772,
+      "tags": {
+        "addr:street": "Gazi Mustafa Kemal Caddesi",
+        "amenity": "theatre",
+        "name": "Atatürk kültür merkezi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5107247591,
+      "lat": 41.0067414,
+      "lon": 28.9304091,
+      "tags": {
+        "addr:city": "Istanbul",
+        "addr:district": "Fatih",
+        "addr:street": "Çevre Tiyatrosu Sokak",
+        "amenity": "theatre",
+        "name": "Semaver Kumpanya Çevre Tiyatrosu",
+        "name:ar": "سيمافير كومبانيا تشيفري تياتروسو"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5108837437,
+      "lat": 41.0141839,
+      "lon": 28.9756525,
+      "tags": {
+        "addr:city": "Istanbul",
+        "addr:district": "Fatih",
+        "addr:street": "Hocapaşa Hamamı Sokak",
+        "amenity": "theatre",
+        "name": "HODJAPASHA",
+        "name:ar": "مسرح هودجا باشا",
+        "phone": "+90 212 511 46 26"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5244812070,
+      "lat": 41.0189781,
+      "lon": 28.9648174,
+      "tags": {
+        "addr:city": "Istanbul",
+        "addr:district": "Fatih",
+        "addr:street": "Kıble Çeşme Caddesi",
+        "amenity": "theatre",
+        "name": "Dostlar Tiyatrosu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5310071237,
+      "lat": 41.10539,
+      "lon": 29.0213673,
+      "tags": {
+        "amenity": "theatre",
+        "name": "ITU Open Air Theater",
+        "operator": "Istanbul Technical University"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5329319826,
+      "lat": 40.9522335,
+      "lon": 29.2968549,
+      "tags": {
+        "addr:city": "Istanbul",
+        "addr:district": "Sultanbeyli",
+        "addr:street": "Mürşit caddesi",
+        "amenity": "theatre",
+        "name": "Çınar",
+        "name:ar": "الشجر الجميل",
+        "phone": "05444084717",
+        "wedding_reception": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5450459404,
+      "lat": 40.9952014,
+      "lon": 29.0278017,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Köşe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5558390022,
+      "lat": 41.0703296,
+      "lon": 29.0020964,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Profilo Kültür Merkezi",
+        "name:en": "Profilo Culture Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5601212240,
+      "lat": 41.0021615,
+      "lon": 29.0308648,
+      "tags": {
+        "addr:city": "İstanbul",
+        "addr:district": "Kadıkoy",
+        "addr:housenumber": "2/2",
+        "addr:neighbourhood": "Koşuyolu Mahallesi",
+        "addr:postcode": "34718",
+        "addr:street": "Gül Sokak",
+        "amenity": "theatre",
+        "email": "bilgi@apartmansahne.com",
+        "name": "Apartman Sahne",
+        "phone": "+90 216 339 93 39",
+        "website": "http://www.apartmansahne.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5653363122,
+      "lat": 41.0820052,
+      "lon": 29.0120445,
+      "tags": {
+        "amenity": "theatre",
+        "name": "İŞ Sanat"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5969447186,
+      "lat": 41.0617599,
+      "lon": 28.9426736,
+      "tags": {
+        "amenity": "theatre",
+        "name": "معرض الدلفين"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6432240559,
+      "lat": 41.0343991,
+      "lon": 28.9791449,
+      "tags": {
+        "addr:city": "Istanbul",
+        "addr:district": "Beyoğlu",
+        "addr:neighbourhood": "Şehit Muhtar",
+        "addr:street": "İstiklal Caddesi",
+        "amenity": "theatre",
+        "email": "ortaoyuncular@ortaoyuncular.com",
+        "name": "Ortaoyuncular Tiyatrosu",
+        "phone": "+90 212 251 18 65",
+        "website": "http://www.ortaoyuncular.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6525497699,
+      "lat": 40.986354,
+      "lon": 29.0257617,
+      "tags": {
+        "addr:full": "Dr. Esat Isik Cad, 15, Istanbul, Turkey",
+        "amenity": "theatre",
+        "name": "Oyun Atölyesi",
+        "name:ar": "مسرح اويون اتوليسي",
+        "phone": "+90 216 345 39 39",
+        "website": "http://www.oyunatolyesi.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6872755505,
+      "lat": 41.0170572,
+      "lon": 29.0238064,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Kerem Yılmazlar Sahnesi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 59595670,
+      "nodes": [
+        739348182,
+        739348186,
+        1781528038,
+        1781528044,
+        739348189,
+        1781528041,
+        1781528046,
+        1781528043,
+        1781528045,
+        739348190,
+        1781528042,
+        1781528040,
+        1781528039,
+        1781528047,
+        739348182
+      ],
+      "tags": {
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Cemal Reşit Rey Konser Salonu",
+        "name:ar": "كونسيرت جمال رشيد",
+        "name:en": "Cemal Resit Rey Concert Hall",
+        "theatre:genre": "philharmonic",
+        "website": "http://www.crrkonsersalonu.org/",
+        "wikidata": "Q5058633",
+        "wikipedia": "en:Cemal Reşit Rey Concert Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 59595672,
+      "nodes": [
+        739348210,
+        739348212,
+        3416589558,
+        739348220,
+        739348210
+      ],
+      "tags": {
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Harbiye Muhsin Ertuğrul Tiyatrosu",
+        "name:ar": "مسرح محسن ارطغرل في حربية",
+        "name:en": "Harbiye Muhsin Ertuğrul Theater"
       }
     },
     {
