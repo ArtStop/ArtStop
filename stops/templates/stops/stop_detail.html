@@ -1,5 +1,8 @@
 {% extends "stops/base.html" %}
 {% block content %}
+{% load leaflet_tags %}
+{% leaflet_css %}
+{% leaflet_js %}
 <div>
     <h1>{{ object.name }}</h1>
     {% leaflet_map "main" callback="map_init" %}
