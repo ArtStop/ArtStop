@@ -20,13 +20,18 @@ def load_data(apps, schema_editor):
                 if objType == 'node':
                     tags = obj['tags']
                     name = tags.get('name','no-name')
+                    address = ' '
                     if tags.get('tourism'):
                          category = tags.get('tourism')
                     elif tags.get('amenity'):
                          category = tags.get('amenity')
+                         if category == 'place_of_worship':
+                             category = tags.get('building')
                     elif tags.get('building'):
                          category = tags.get('building')
-                    address = tags.get('addr:full')
+                    
+                    if tags.get('addr:full'):
+                        address = tags.get('addr:full')
                     city = 'Istanbul'
                     longitude = obj.get('lon', 0)
                     latitude = obj.get('lat', 0)

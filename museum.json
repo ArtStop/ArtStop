@@ -13,6 +13,7 @@
       "lat": 41.1060207,
       "lon": 29.0555191,
       "tags": {
+        "addr:full":"Sakıp Sabancı Caddesi No:42 Emirgan 34467 İstanbul",
         "charge": "20 TRY",
         "fee": "yes",
         "name": "Sabancı Üniversitesi Sakıp Sabancı Müzesi",
