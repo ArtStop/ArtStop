@@ -8,7 +8,7 @@ from .models import Stop, Comment
 from .filters import StopFilter
 from django.contrib.gis.geos import Point
 from comments.forms import CommentForm
-from django.contrib.auth.decorators import user_passes_test
+from django.contrib.auth.decorators import user_passes_test, login_required
 import json, requests
 info = requests.get('http://ipinfo.io/json').json()
 result = [x.strip() for x in info['loc'].split(',')]
