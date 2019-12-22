@@ -1,3 +1,6 @@
+import django_filters
+from .models import Stop
+
 class StopFilter(django_filters.FilterSet):
 
     CHOICES = (
