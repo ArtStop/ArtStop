@@ -13,6 +13,7 @@ class Stop(models.Model):
     category = models.CharField(max_length=50)
     address = models.CharField(max_length=100)
     city = models.CharField(max_length=50)
+    photograph = models.ImageField(upload_to="stop_image", blank=True)
     desc = models.CharField(max_length=50) 
 
 class RatingModel(models.Model):
