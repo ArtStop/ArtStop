@@ -66,7 +66,9 @@
   <hr>
   <h2>Comments</h2>
 
+  {% if user.is_authenticated %}
   <a class="btn btn-default" href="{% url 'add_comment_to_stop' pk=stop.pk %}">Add comment</a>
+  {% endif %}
 
   {% for comment in object.comments.all %}
     {% if comment.approved_comment %}
