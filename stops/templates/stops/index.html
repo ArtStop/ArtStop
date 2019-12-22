@@ -3,12 +3,17 @@
 {% block content %}
     <h1 class="title">Nearby ArtStops</h1>
     <p class="subtitle"><i>ArtStop is an app that shows the 10 nearest ArtStops to you according to your location!</i></p>
+    <form method="GET">
+        {{ filter.form|crispy }}
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </form>
     {% if stops %}
     <table class="table">
-    {% for stop in stops %}
+    {% for stop in filter.qs %}
         <tr>
         <td> <a href="{% url 'stop-detail' pk=stop.id %}" >{{ stop.name }} </a> </td>
         <td>{{stop.distance}}</td>
+        <td>{{stop.category}}</td>
     {% endfor %}
     </table>
     {% endif %}
