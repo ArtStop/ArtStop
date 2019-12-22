@@ -16,6 +16,7 @@ user_location = Point(float(longitude), float(latitude), srid=4326)
 
 class Home(generic.ListView):
     model = Stop
+    context_object_name = 'stops'
     qs_names = [stop.name for stop in Stop.objects.annotate(distance=Distance('location',
     user_location)
     ).order_by('distance')[:10]]
