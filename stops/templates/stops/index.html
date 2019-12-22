@@ -1,14 +1,38 @@
 {% extends "stops/base.html" %}
-{% load crispy_forms_tags %}
 {% block content %}
+{% load crispy_forms_tags %}
+{% load leaflet_tags %}
+{% load static %}
+{% leaflet_css %}
+{% leaflet_js %}
     <h1 class="title">Nearby ArtStops</h1>
-    <p class="subtitle"><i>ArtStop is an app that shows the 10 nearest ArtStops to you according to your location!</i></p>
+    <p class="subtitle"><i>ArtStop is an app that shows the nearest ArtStops to you according to your location!</i></p>
+    
+    
     <form method="GET">
         {{ filter.form|crispy }}
         <button type="submit" class="btn btn-primary">Filter</button>
     </form>
     {% if stops %}
     <table class="table">
+        <div>
+            {% leaflet_map "main" callback="map_init" %}
+            <script type="text/javascript">
+                function map_init(map, options) {
+                    map.setView([41.00527, 28.97696], 12);
+                    {% for object in filter.qs %}
+                    var lon = "{{ object.location.x }}";
+                    var lat = "{{ object.location.y }}";
+                    L.marker([lat, lon]).addTo(map);
+                    {% endfor %}
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                    function showPosition(position){
+                        L.circleMarker([position.coords.latitude,position.coords.longitude]).addTo(map).bindPopup("This is you.");
+                        map.setView([position.coords.latitude,position.coords.longitude], 12);
+                    }
+                }
+            </script>
+        </div>
     {% for stop in filter.qs %}
         <tr>
         <td> <a href="{% url 'stop-detail' pk=stop.id %}" >{{ stop.name }} </a> </td>
