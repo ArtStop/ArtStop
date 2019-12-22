@@ -63,11 +63,13 @@
     
   </article>
 
+  <hr>
+  <h2>Comments</h2>
+
   <a class="btn btn-default" href="{% url 'add_comment_to_stop' pk=stop.pk %}">Add comment</a>
 
-  <hr>
   {% for comment in object.comments.all %}
-    {% if user.is_authenticated or comment.approved_comment %}
+    {% if comment.approved_comment %}
     <div class="comment">
         <div class="date">
             {{ comment.created_date }}
