@@ -5,6 +5,7 @@ from django.views import generic
 from django.contrib.gis.geos import fromstr
 from django.contrib.gis.db.models.functions import Distance
 from .models import Stop
+from .filters import StopFilter
 from django.contrib.gis.geos import Point
 import json, requests
 info = requests.get('http://ipinfo.io/json').json()
