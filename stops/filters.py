@@ -5,7 +5,8 @@ class StopFilter(django_filters.FilterSet):
 
     class Meta:
         model = Stop
-        fields =  ['category', 'name']#('category', 'name')
+        fields =  {'category': ['icontains'],
+                    'name': ['icontains']}#('category', 'name')
     
     """@property
     def qs(self):
