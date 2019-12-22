@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
 from django.contrib.auth import views as auth_views
-
+from django.conf.urls.static import static
+from .settings import MEDIA_ROOT,MEDIA_URL
 from stops import views as stops_views
 from users import views as users_views
 
@@ -34,4 +35,4 @@ urlpatterns = [
     path('comment/<int:pk>/approve/', stops_views.comment_approve, name='comment_approve'),
     path('comment/<int:pk>/remove/', stops_views.comment_remove, name='comment_remove'),
 
-]
+] + static(MEDIA_URL, document_root=MEDIA_ROOT)
