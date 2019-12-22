@@ -22,10 +22,10 @@ class Home(generic.ListView):
     ).order_by('distance')
 
     template_name = 'stops/index.html'
-    qs_names = [stop.name for stop in Stop.objects.annotate(distance=Distance('location',
+    """qs_names = [stop.name for stop in Stop.objects.annotate(distance=Distance('location',
     user_location)
     ).order_by('distance')]
-    queryset = Stop.objects.all().filter(name__in=qs_names)
+    queryset = Stop.objects.all().filter(name__in=qs_names)"""
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
