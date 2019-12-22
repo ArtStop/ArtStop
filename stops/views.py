@@ -15,11 +15,17 @@ user_location = Point(float(longitude), float(latitude), srid=4326)
 
 class Home(generic.ListView):
     model = Stop
-    context_object_name = 'stops'
-    queryset = Stop.objects.annotate(distance=Distance('location',
+    qs_names = [stop.name for stop in Stop.objects.annotate(distance=Distance('location',
     user_location)
-    ).order_by('distance')[0:10]
+    ).order_by('distance')[:10]]
+    queryset = Stop.objects.all().filter(name__in=qs_names)
+
     template_name = 'stops/index.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['filter'] = StopFilter(self.request.GET, queryset=self.get_queryset())
+        return context
 
 class StopDetailView(generic.DetailView):
     model = Stop
