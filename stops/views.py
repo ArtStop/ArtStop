@@ -37,6 +37,7 @@ class Home(generic.ListView):
 class StopDetailView(generic.DetailView):
     model = Stop
 
+@login_required
 def add_comment_to_stop(request, pk):
     stop = get_object_or_404(Stop, pk=pk)
     if request.method == "POST":
