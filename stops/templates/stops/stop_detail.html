@@ -37,8 +37,7 @@
       </div>
       <h2 class="article-title">{{ object.name }}</h2>
       <p class="article-content">{{ object.city }}</p>
-      <p class="article-content">{{ object.desc }}</p>
-      <!-- <div class="field">
+      <div class="field">
         <label for="vote" class="label">Vote this place: </label>
         <div class="control">
           <input type="radio" id="vote5" name="rate" value="5" />
@@ -52,13 +51,34 @@
           <input type="radio" id="vote1" name="rate" value="1" />
           <label for="vote1" title="text">1</label>
         </div>
-      </div> -->
-      <!-- <div class="field is-grouped">
+      </div>
+      <div class="field is-grouped">
         <div class="control">
           <button class="button is-primary is-small">Submit!</button>
         </div>
-      </div> -->
+      </div>
     </div>
     
   </article>
+
+  <a class="btn btn-default" href="{% url 'add_comment_to_stop' pk=stop.pk %}">Add comment</a>
+
+  <hr>
+  {% for comment in object.comments.all %}
+    {% if user.is_authenticated or comment.approved_comment %}
+    <div class="comment">
+        <div class="date">
+            {{ comment.created_date }}
+            {% if not comment.approved_comment and user.is_superuser %}
+                <a class="btn btn-default" href="{% url 'comment_remove' pk=comment.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+                <a class="btn btn-default" href="{% url 'comment_approve' pk=comment.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
+            {% endif %}
+        </div>
+        <strong>{{ comment.author }}</strong>
+        <p>{{ comment.text|linebreaks }}</p>
+    </div>
+    {% endif %}
+{% empty %}
+    <p>No comments here yet :(</p>
+{% endfor %}
 {% endblock content %}
