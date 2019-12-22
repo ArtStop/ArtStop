@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'leaflet',
     'star_ratings',
     'django_filters',
+    'comments',
 ]
 
 MIDDLEWARE = [
