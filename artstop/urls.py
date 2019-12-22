@@ -27,7 +27,7 @@ urlpatterns = [
     path('register/', users_views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
-    url(r'^stops/(?P<pk>[0-9]+)$', stops_views.StopDetailView.as_view(), name='stop-detail'),
+    url(r'^stops/(?P<pk>[0-9]+)/$', stops_views.StopDetailView.as_view(), name='stop-detail'),
     url(r'^ratings/', include('star_ratings.urls', namespace='ratings'))#, app_namespace='ratings'))
 
 ]
