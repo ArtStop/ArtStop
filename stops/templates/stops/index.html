@@ -23,7 +23,7 @@
                     {% for object in filter.qs %}
                     var lon = "{{ object.location.x }}";
                     var lat = "{{ object.location.y }}";
-                    L.marker([lat, lon]).addTo(map);
+                    L.marker([lat, lon]).addTo(map).bindPopup("{{ object.name }}");
                     {% endfor %}
                     navigator.geolocation.getCurrentPosition(showPosition);
                     function showPosition(position){
